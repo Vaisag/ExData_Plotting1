@@ -9,7 +9,6 @@ plot2 <- function() {
   
   colnames(tabAll) <- as.character(unlist(columnNames[1,]))
   tabAll$DateTime <-paste(tabAll$Date,tabAll$Time)
-  tabOmitted <- tabAll[tabAll$Global_active_power!="?",]
   tabAll$Date <- as.Date(tabAll$Date,"%d/%m/%Y")
   DateTimeNow <- as.POSIXct(tabAll$DateTime,format="%d/%m/%Y %H:%M:%S",tz="")
   print(DateTimeNow)
