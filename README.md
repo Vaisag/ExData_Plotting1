@@ -112,3 +112,15 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+
+## Variables Used
+* tabfirst - Data from the date 1/2/2007 alone
+* tabsecond - Data from the date 2/2/2007 alone
+* columnNames - Column Names of the data
+* tabAll - merged data from tabfirst and tabsecond
+* DateTime - Combined data from columns Date and Time
+* DatetimeNow - Date and time combined in posixct format
+
+## How to execute
+* setwd and place the data file in the working directory
+* call function plot1(),plot2(),plot3(),plot4() depending on which plot user needs
